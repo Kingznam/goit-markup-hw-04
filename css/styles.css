@@ -15,6 +15,7 @@
  --cornflower: #e7e9fc;
  --white: #fff;
  --blue: #0000ff;
+ --grey: rgba(46, 47, 66, 0.70)
 }
 
 body {
@@ -152,7 +153,13 @@ address {
   letter-spacing: 0.32px;
   color: var(--slate);
   margin-left: auto;
+}
 
+.hero-section-container {
+  padding: 0 15px;
+  text-align: center;
+  width: 1440px;
+  
 }
 
 .hero {
@@ -161,6 +168,10 @@ address {
   justify-content: center;
   align-items: center;
   padding: 188px 0;
+  background-image: url(../images/office-table.jpg);
+  background-size: cover;
+  background: var(--grey);
+
 
 }
 
@@ -400,4 +411,41 @@ address {
   margin-bottom: 17.5px;
   display: block;
   margin-bottom: 17.5px;
+}
+
+.social-media-text {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.32px;
+  color: var(--cloud);
+  margin-bottom: 16px;
+}
+
+.social-media {
+
+}
+
+
+.social-media-links {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--iris);
+  border-radius: 100px;
+
+
+}
+
+.social-media {
+  text-align: left;
 }
