@@ -368,7 +368,34 @@ address {
  }
 .team-text {
   text-align: center;
+
 }
+
+.customer {
+  padding: 120px 0;
+}
+
+.customer-lists {
+  display: inline-flex;
+  column-gap: 24px;
+  align-items: flex-start;
+}
+
+.customer-logo {
+  width: 168px; 
+  height: 88px; 
+  padding: 16px 32px; 
+  object-fit: cover;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  fill: var(--slate);
+}
+
+
 
 .footer {
   background-color: var(--navy-blue);
@@ -427,10 +454,6 @@ address {
   letter-spacing: 0.32px;
   color: var(--cloud);
   margin-bottom: 16px;
-}
-
-.social-media {
-
 }
 
 
