@@ -249,6 +249,8 @@ address {
   border: 1px solid var(--cornflower);
   font-family: inherit;
   display: inline-flex;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .filter-button:hover{
@@ -282,6 +284,7 @@ address {
   text-align: center;
   width: 360px;
   background: var(--white);
+  cursor: pointer;
 }
 
 .project-card-details .section-sub-header {
@@ -295,6 +298,13 @@ address {
 .project-card {
  padding: 0 0 120px;
 }
+
+.project-card-list:hover {
+  border: 1px solid var(--cloud);
+  background: var(--white);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 
 .image {
   justify-self: center;
