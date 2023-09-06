@@ -328,6 +328,8 @@ address {
 .features-image {
   width: 264px;
   height: 112px;
+  border-radius: 4px;
+  background: var(--clou);
 }
 
 .section-main-header {
@@ -386,6 +388,8 @@ address {
   width: 168px; 
   height: 88px; 
   padding: 16px 32px; 
+  border-radius: 4px; /* Step 3: Add rounded corners */
+  border: 1px solid var(--LIGHT-SLATE, #8E8F99); /* Step 4: Add the border */
 
 }
 
@@ -442,7 +446,7 @@ address {
   margin-right: auto;
   background-color: var(--navy-blue);
   text-align: left;
-  display: inline-flex;
+  display: flex;
 }
 
 .logo-text-container {
