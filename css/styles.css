@@ -148,6 +148,7 @@ address {
 }
 
 
+
 .contacts-address-link {
   font-size: 16px;
   line-height: 1.5em;
@@ -398,8 +399,8 @@ address {
   width: 168px; 
   height: 88px; 
   padding: 16px 32px; 
-  border-radius: 4px; /* Step 3: Add rounded corners */
-  border: 1px solid var(--LIGHT-SLATE, #8E8F99); /* Step 4: Add the border */
+  border-radius: 4px; 
+  border: 1px solid var(--light-slate);
 
 }
 
