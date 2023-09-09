@@ -16,6 +16,7 @@
  --white: #fff;
  --blue: #0000ff;
  --light-slate: #8E8F99;
+ --green: #31D0AA;
  
 }
 
@@ -102,9 +103,15 @@ address {
   display: inline-flex;
 }
 
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+
 .contacts-address {
   display: inline-block;
   margin-left:auto;
+  gap:40px;
 }
 
 .nav-menu-list {
@@ -113,9 +120,24 @@ address {
   position: relative;
 }
 
-.address ul {
-  display: flex;
-  gap: 40px;
+.nav-menu-item {
+  position: relative;
+}
+
+.nav-menu-item::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--ocean);
+  position: absolute;
+  bottom: -20px;
+
+}
+
+.nav-menu-item:hover::after {
+  width: 100%; 
 }
 
 .logo {
@@ -142,8 +164,11 @@ address {
 
 }
 
- .nav-menu-link:hover,
- .contacts-address-link {
+ .nav-menu-link:hover {
+  color: var(--ocean);
+}
+
+.contacts-address-link:hover {
   color: var(--ocean);
 }
 
@@ -219,6 +244,16 @@ address {
   margin-top: 8px;
 }
 
+.feature-image-wrapper {
+  background-color: var(--cloud);
+  display: inline-block;
+  padding: 24px 100px;
+}
+
+.company-logo {
+  fill: var(--slate);
+}
+
 .filters {
   padding: 96px 0 72px;
 }
@@ -251,7 +286,6 @@ address {
   font-family: inherit;
   display: inline-flex;
   border-radius: 4px;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .filter-button:hover{
@@ -395,20 +429,24 @@ address {
   align-items: center;
 }
 
-.customer-logo {
+.customer-lists-item {
   width: 168px; 
   height: 88px; 
   padding: 16px 32px; 
   border-radius: 4px; 
   border: 1px solid var(--light-slate);
-
+  color: var(--light-slate);
 }
 
+.customer-lists-item:hover {
+  color: var(--ocean);
+  border-color: var(--ocean);
+}
 .company-logo {
   width: 168px;
   height: 88px;
   object-fit: cover;
-  fill: var(--light-slate);
+  fill: currentColor;
   background-size: cover;
   
 }
@@ -507,4 +545,13 @@ fill: var(--cloud);
 
 .social-media {
   text-align: center;
+}
+
+.social-media-link:hover {
+  background-color: var(--ocean);
+}
+
+.footer-socials-container .social-media-link:hover {
+  background-color: var(--green);
+
 }
