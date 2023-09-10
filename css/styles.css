@@ -294,6 +294,7 @@ address {
   color: var(--white);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 
   0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  border-color: var(--ocean);
 }
 
 .project-card-details {
@@ -338,6 +339,10 @@ address {
   border: 1px solid var(--cloud);
   background: var(--white);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.project-card-list:hover .project-card-details {
+  border: unset;
 }
 
 
